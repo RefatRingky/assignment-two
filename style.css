@@ -119,6 +119,9 @@
     border-radius: 15px;
 }
 /* css for blog section */
+.container{
+  padding-top: 70px;
+}
 .main-section {
   max-width: 100%;
   padding-top: 100%;
@@ -400,15 +403,29 @@
     
   
   /* media quires */
+  @media only screen and(max-width:800px){
+    .nav-container{
+      flex-direction: column;
+    }
+    .menu-container{
+      flex-direction: column;
+    }
+  }
   @media only screen and (max-width:800px) {
     .features-container {
         flex-direction: column;
         align-items: center;
-        padding-bottom: 30px;
+        padding-bottom: 300px;
+        
+    }
+    .feature-left{
+      padding-top: 200%;
     }
     .feature-section{
       flex-direction: column;
+      
     }
+   
      
 }
   @media only screen and (max-width:800px) {
@@ -436,12 +453,25 @@
       grid-template-columns: 1fr;
       padding-top: 30px;
   }
+  .container{
+    padding-top: 200%;
+  }
  
 }
 @media only screen and (min-width:601px) and (max-width:800px) {
   .main-items {
       grid-template-columns: 1fr 1fr;
-      padding-top: 30px;
+      padding-top: 200%;
+  }
+}
+@media only screen and (max-width:800px){
+  .banner-section{
+    flex-direction: column;
+   
+  }
+  .banner-section-image{
+      justify-content: center;
+      align-items: center;
   }
 }
 
